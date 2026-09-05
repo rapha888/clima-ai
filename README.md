@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌦️ ClimaAI
 
-## Getting Started
+Aplicação web de previsão do tempo que combina dados meteorológicos em tempo real com inteligência artificial para gerar análises climáticas simples e úteis.
 
-First, run the development server:
+🔗 **Projeto online:** https://clima-ai-ten.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Funcionalidades
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 🔎 Busca de clima por cidade
+- 🌡️ Temperatura e sensação térmica
+- 💧 Umidade do ar
+- 💨 Velocidade do vento
+- 📅 Previsão para os próximos 5 dias
+- 🌧️ Probabilidade de chuva
+- ☀️ Identificação do melhor dia da semana
+- 🧠 Insights automáticos sobre a previsão
+- ✨ Análise climática gerada com Gemini
+- 📱 Interface responsiva para desktop e celular
+- ⚠️ Tratamento de erros para cidades não encontradas e falhas da IA
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tecnologias utilizadas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Next.js
+- TypeScript
+- React
+- Tailwind CSS
+- Open-Meteo API
+- Gemini API
+- Vercel
 
-## Learn More
+## 🤖 Inteligência Artificial
 
-To learn more about Next.js, take a look at the following resources:
+O ClimaAI envia os dados meteorológicos obtidos pela API para uma rota server-side da aplicação.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A integração com o Gemini gera um resumo em português destacando informações relevantes da previsão, como possibilidade de chuva, mudanças de temperatura e recomendações práticas.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+A chave da API é armazenada em variável de ambiente e não é exposta no código enviado ao navegador.
 
-## Deploy on Vercel
+## 🌐 APIs
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Open-Meteo**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Utilizada para localização das cidades e obtenção dos dados meteorológicos.
+
+**Gemini**
+
+Utilizada para geração das análises climáticas com inteligência artificial.
+
+## 🚀 Deploy
+
+O projeto está publicado na Vercel.
+
+Acesse:
+
+https://clima-ai-ten.vercel.app/
+
+## 📌 Sobre o projeto
+
+Projeto desenvolvido para portfólio com o objetivo de praticar desenvolvimento web moderno, consumo de APIs, integração com inteligência artificial e criação de interfaces responsivas.
